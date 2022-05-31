@@ -17,7 +17,7 @@ resource "vault_aws_secret_backend_role" "ec2-admin" {
   name    = "ec2-admin-role"
   credential_type = "iam_user"
 
-  policy = <<EOT
+  policy_document = <<EOT
 {
   "Version": "2012-10-17",
   "Statement": [
