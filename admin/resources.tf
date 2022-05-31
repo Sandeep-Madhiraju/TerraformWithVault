@@ -1,5 +1,5 @@
 provider "vault" {
-	address = "http://172.20.10.2:8201"
+	address = "${var.vault_addr}"
 	token = "${var.vault_token}"
 }
 
