@@ -8,7 +8,7 @@ resource "vault_aws_secret_backend" "aws" {
   secret_key = "${var.secret_key}"
   region = "us-east-2"
 
-  default_lease_ttl_seconds = "120"
+  default_lease_ttl_seconds = "121"
   max_lease_ttl_seconds     = "240"
 }
 
