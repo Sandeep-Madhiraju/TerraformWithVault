@@ -1,12 +1,12 @@
 provider "vault" {
-	address = "Replace with public URL"
-	token = "Replace with admin token"
+	address = "https://vault-cluster-aws.vault.797ef198-e9b5-4477-b448-5c560fcbe367.aws.hashicorp.cloud:8200"
+	token = "hvs.CAESIE0bCmocw56iCzmCGAByRXvI_nqxTv8oloKx13GLSL8KGicKImh2cy55M2Q3Uloycm5mbWM3OUV4UG51eWhpbzQuQ052Z3gQnxA"
 }
 
 resource "vault_aws_secret_backend" "aws" {
   access_key = "${var.access_key}"
   secret_key = "${var.secret_key}"
-  region = "us-east-1"
+  region = "us-east-2"
 
   default_lease_ttl_seconds = "120"
   max_lease_ttl_seconds     = "240"
