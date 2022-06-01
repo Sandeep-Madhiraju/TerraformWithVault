@@ -1,6 +1,6 @@
 provider "vault" {
-	address = "https://vault-cluster-aws.vault.797ef198-e9b5-4477-b448-5c560fcbe367.aws.hashicorp.cloud:8200"
-	token = "hvs.CAESIE0bCmocw56iCzmCGAByRXvI_nqxTv8oloKx13GLSL8KGicKImh2cy55M2Q3Uloycm5mbWM3OUV4UG51eWhpbzQuQ052Z3gQnxA"
+	address = "Vault address"
+	token = "Vault Token"
 }
 
 terraform {
