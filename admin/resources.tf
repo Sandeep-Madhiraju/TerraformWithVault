@@ -10,8 +10,8 @@ terraform {
 }
 
 resource "vault_aws_secret_backend" "aws" {
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
+  access_key = "AKIAT3PUN65TUA2MFSWE"
+  secret_key = "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"
   region = "us-east-2"
 
   default_lease_ttl_seconds = "121"
