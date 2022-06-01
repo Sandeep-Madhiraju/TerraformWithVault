@@ -3,6 +3,12 @@ provider "vault" {
 	token = "hvs.CAESIE0bCmocw56iCzmCGAByRXvI_nqxTv8oloKx13GLSL8KGicKImh2cy55M2Q3Uloycm5mbWM3OUV4UG51eWhpbzQuQ052Z3gQnxA"
 }
 
+terraform {
+  backend "remote" {
+    path = "terraform.tfstate"
+  }
+}
+
 resource "vault_aws_secret_backend" "aws" {
   access_key = "${var.access_key}"
   secret_key = "${var.secret_key}"
