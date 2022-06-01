@@ -1,7 +1,7 @@
 #providers
 provider "vault" {
-	address = "${var.vault_addr}"
-	token = "${var.vault_token}"
+	address = "https://vault-cluster-aws.vault.797ef198-e9b5-4477-b448-5c560fcbe367.aws.hashicorp.cloud:8200"
+	token = "hvs.CAESIE0bCmocw56iCzmCGAByRXvI_nqxTv8oloKx13GLSL8KGicKImh2cy55M2Q3Uloycm5mbWM3OUV4UG51eWhpbzQuQ052Z3gQnxA"
 }
 
 data "vault_aws_access_credentials" "creds" {
