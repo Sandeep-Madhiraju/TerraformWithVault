@@ -7,7 +7,10 @@ terraform {
     }
   }
 }
-provider "vault" {}
+provider "vault" {
+ address = "${var.VAULT_ADDR}"
+ token = "${var.VAULT_TOKEN}"
+}
 
 data "vault_aws_access_credentials" "creds" {
   backend = "aws"
