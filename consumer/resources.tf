@@ -1,6 +1,13 @@
 #providers
-provider "vault" {
+terraform {
+  required_providers {
+    vault = {
+      source  = "hashicorp/vault"
+      version = "2.17.0"
+    }
+  }
 }
+provider "vault" {}
 
 data "vault_aws_access_credentials" "creds" {
   backend = "aws"
