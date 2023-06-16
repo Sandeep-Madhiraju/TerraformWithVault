@@ -1,7 +1,7 @@
 #providers
 provider "vault" {
-	address = "${var.vault_addr}"
-	token = "${var.vault_token}"
+	address = "vault address"
+	token = "vault token"
 }
 
 data "vault_aws_access_credentials" "creds" {
