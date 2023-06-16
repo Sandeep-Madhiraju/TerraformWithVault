@@ -4,8 +4,6 @@ terraform {
     vault = {
       source  = "hashicorp/vault"
       version = "2.17.0"
-      address = "${var.VAULT_ADDR}"
-      token = "${var.VAULT_TOKEN}"
     }
   }
 }
