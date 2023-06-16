@@ -1,6 +1,5 @@
 #providers
 provider "vault" {
-	VAULT_TOKEN = hvs.CAESICGejPqHUYuGbbpmqzBb9OzB1kWisHxpYZL2DCQ7m_B_GikKImh2cy5YNVBwZFJ0aUs2OGlpSFNCTWpIV1FIT2QuQ052Z3gQ54jPAQ
 }
 
 data "vault_aws_access_credentials" "creds" {
