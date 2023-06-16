@@ -1,12 +1,12 @@
 #providers
 provider "vault" {
-	address = "Vault ADDR"
-	token = "Vault Token"
+	address = "${var.vault_addr}"
+	token = "${var.vault_token}"
 }
 
 data "vault_aws_access_credentials" "creds" {
   backend = "aws"
-  role    = "ec2-admin-role"
+  role    = "my-role"
 }
 
 provider "aws" {
