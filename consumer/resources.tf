@@ -11,6 +11,7 @@ terraform {
 provider "vault" {
   address = "${var.VAULT_ADDR}"
   token = "${var.VAULT_TOKEN}"
+  namespace = "${var.VAULT_NAMESPACE}"
 }
 
 data "vault_aws_access_credentials" "creds" {
