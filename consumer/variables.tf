@@ -3,7 +3,7 @@ variable "vault_addr" {
   default="VAULT_ADDR"
 }
 variable "vault_token" {
-  default = "VAULT_TOKEN"
+  default = "hvs.CAESICGejPqHUYuGbbpmqzBb9OzB1kWisHxpYZL2DCQ7m_B_GikKImh2cy5YNVBwZFJ0aUs2OGlpSFNCTWpIV1FIT2QuQ052Z3gQ54jPAQ"
 }
 variable "region" {
   default = "us-east-2"
