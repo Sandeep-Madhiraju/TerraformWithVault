@@ -2,15 +2,16 @@
 terraform {
   required_providers {
     vault = {
-      source  = "hashicorp/vault"
-      version = "2.17.0"
+      source = "hashicorp/vault"
+      version = "3.16.0"
     }
   }
 }
-#provider "vault" {
- #address = "${var.VAULT_ADDR}"
- #token = "${var.VAULT_TOKEN}"
-#}
+
+provider "vault" {
+  address = "${var.VAULT_ADDR}"
+  token = "${var.VAULT_TOKEN}"
+}
 
 data "vault_aws_access_credentials" "creds" {
   backend = "aws"
