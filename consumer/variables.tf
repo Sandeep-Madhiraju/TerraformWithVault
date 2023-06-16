@@ -5,6 +5,9 @@ variable "VAULT_ADDR" {
 variable "VAULT_TOKEN" {
   default = ""
 }
+variable "VAULT_NAMESPACE" {
+  default = ""
+}
 variable "region" {
   default = "us-east-2"
 }
