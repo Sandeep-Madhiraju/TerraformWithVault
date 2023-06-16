@@ -1,8 +1,8 @@
 # Variables
-variable "vault_addr" {
-  default="VAULT_ADDR"
+variable "VAULT_ADDR" {
+  default=""
 }
-variable "vault_token" {
+variable "VAULT_TOKEN" {
   default = ""
 }
 variable "region" {
