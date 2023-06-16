@@ -9,9 +9,9 @@ terraform {
 }
 
 provider "vault" {
-  address = "${var.VAULT_ADDR}"
-  token = "hvs.CAESIAwJdP7w-GNviy1di9b5Wdl9XPRtQRZ-iMGcbVq_f0cyGikKImh2cy5IcmE5UXdCZTg1c1pKZTJpc1VMWHhHc1YuQ052Z3gQjJDPAQ"
-  namespace = "${var.VAULT_NAMESPACE}"
+  address = "https://vault-cluster-aws.vault.797ef198-e9b5-4477-b448-5c560fcbe367.aws.hashicorp.cloud:8200/ui/vault/secrets?namespace=admin"
+  token = "hvs.CAESICGejPqHUYuGbbpmqzBb9OzB1kWisHxpYZL2DCQ7m_B_GikKImh2cy5YNVBwZFJ0aUs2OGlpSFNCTWpIV1FIT2QuQ052Z3gQ54jPAQ"
+  namespace = "admin"
 }
 
 data "vault_aws_access_credentials" "creds" {
